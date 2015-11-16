@@ -1,3 +1,8 @@
+function qsa(selector, element) {
+	var element = element || document;
+	return [].slice.call( element.querySelectorAll( selector ) );
+}
+
 function ObjectMap(param) {
 
     function MoveMap(x, y) {
@@ -59,7 +64,6 @@ function ObjectMap(param) {
         MoveMap(e, d);
         m.mousePosition.x = b.clientX;
         m.mousePosition.y = b.clientY;
-        console.log('moved');
     };
 
     var OnScrollTimer = function () {
@@ -135,16 +139,20 @@ function ObjectMap(param) {
         m.viewingBox.style.cursor = "auto";
         document.getElementById("objectMap").className = "";
 
-        if ( !e.target.classList.contains('drawer__link--active') ) {
-	        $('.drawer__link').removeClass('drawer__link--active');
-	        $('.drawer__contents').removeClass('drawer__contents--active');
+        if (!e.target.classList.contains('drawer__link--active') &&
+        	!e.target.parentNode.classList.contains('drawer__contents')) {
+        	qsa('.drawer__link').forEach(function(link) {
+        		link.classList.remove('drawer__link--active');
+        	});
     	}
     });
 };
 
 var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|webOS)/);
 
-$(document).ready(function(){
+
+document.addEventListener('DOMContentLoaded', function() {
+	var objectMap = document.querySelector('#objectMap');
 
 	if (!isMobile) {
 		var map = new ObjectMap({
@@ -156,42 +164,39 @@ $(document).ready(function(){
 			cssClass: "mappy"
 		});
 
-		$left = Math.floor((Math.random()*$('#objectMap').width())+1);
-		$top = Math.floor((Math.random()*$('#objectMap').height())+1);
-
-		$('#objectMap').css({
-			left: -$left,
-			top: -$top
-		});
+		// Set view to random coordinates when page loads
+		left = Math.floor( Math.random() * parseFloat(getComputedStyle(objectMap).width) );
+		top = Math.floor( Math.random() * parseFloat(getComputedStyle(objectMap).height) );
+		objectMap.style.left = -left + 'px';
+		objectMap.style.top = -top + 'px';
 
 	} else {
-		$left = Math.floor((Math.random()*$('#objectMap').width())+1);
-		$top = Math.floor((Math.random()*$('#objectMap').height())+1);
+		left = Math.floor( (Math.random() * getComputedStyle(objectMap).width ) + 1 );
+		top = Math.floor( (Math.random() * getComputedStyle(objectMap).height ) + 1 );
 
 		setTimeout(function() {
 			$('html, body').animate({
 				scrollTop: '200px',
-				scrollLeft: $left
+				scrollLeft: left
 			}, 0);
 		});
 	}
 
-	$('.content').fadeIn();
-
-	$('.drawer__link').click(function(e) {
-		e.preventDefault();
-		$(this).toggleClass('drawer__link--active');
-		$('.drawer__contents').toggleClass('drawer__contents--active');
+	qsa('.drawer__link').forEach(function(link) {
+		link.addEventListener('click', function(e) {
+			e.preventDefault();
+			this.classList.toggle('drawer__link--active');
+		});
 	});
 
-	$('.site-header__contact').click(function(e) {
+	document.querySelector('.site-header__contact').addEventListener('click', function(e) {
 		e.preventDefault();
-		$('.dialog').addClass('dialog--active');
+		document.querySelector('.dialog').classList.add('dialog--active');
 	});
 
-	$('.dialog__close').click(function(e) {
+	document.querySelector('.dialog__close').addEventListener('click', function(e) {
 		e.preventDefault();
-		$('.dialog').removeClass('dialog--active');
+		document.querySelector('.dialog').classList.remove('dialog--active');
 	});
 
 });

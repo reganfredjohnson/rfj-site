@@ -69,12 +69,12 @@ img {
     margin-left: auto;
     margin-right: auto;
     overflow: inherit;
-    display: none;
+    /*display: none;*/
 }
 
 #objectMap {
-    width: 6000px;
-    height: 3000px;
+    width: 4000px;
+    height: 2000px;
     cursor: hand;
     cursor: -moz-grab;
     cursor: -webkit-grab;
@@ -336,7 +336,7 @@ img {
 
 @media only screen and (min-width: 600px) {
 	.project__img {
-		width: 100%;
+		width: auto;
 	}
 }
 
@@ -373,7 +373,7 @@ img {
 	transition: all .2s ease-out;
 }
 
-.drawer__contents--active {
+.drawer__link--active + .drawer__contents {
 	visibility: visible;
 	opacity: 1;
 }
@@ -407,4 +407,16 @@ img {
     top: 460px;
     left: 2200px;
     width: 540px;
+}
+
+#interior {
+    top: 1430px;
+    left: 1110px;
+    width: 1011px;
+}
+
+#cover {
+    top: 920px;
+    left: 280px;
+    width: 505px;
 }
