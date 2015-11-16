@@ -154,9 +154,9 @@ var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|w
 document.addEventListener('DOMContentLoaded', function() {
 	var objectMap = document.querySelector('#objectMap');
 
-	if (!isMobile) {
+	// if (!isMobile) {
 		var map = new ObjectMap({
-			id : "objectMap",
+			id: "objectMap",
 			height: 100,
 			width: 100,
 			startX: 200,
@@ -170,17 +170,17 @@ document.addEventListener('DOMContentLoaded', function() {
 		objectMap.style.left = -left + 'px';
 		objectMap.style.top = -top + 'px';
 
-	} else {
-		left = Math.floor( (Math.random() * getComputedStyle(objectMap).width ) + 1 );
-		top = Math.floor( (Math.random() * getComputedStyle(objectMap).height ) + 1 );
+	// } else {
+	// 	left = Math.floor( (Math.random() * getComputedStyle(objectMap).width ) + 1 );
+	// 	top = Math.floor( (Math.random() * getComputedStyle(objectMap).height ) + 1 );
 
-		setTimeout(function() {
-			$('html, body').animate({
-				scrollTop: '200px',
-				scrollLeft: left
-			}, 0);
-		});
-	}
+	// 	setTimeout(function() {
+	// 		$('html, body').animate({
+	// 			scrollTop: '200px',
+	// 			scrollLeft: left
+	// 		}, 0);
+	// 	});
+	// }
 
 	qsa('.drawer__link').forEach(function(link) {
 		link.addEventListener('click', function(e) {
