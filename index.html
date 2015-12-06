@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Regan Fred Johnson</title>
-		<meta name="viewport" content="width=device-width, initial-scale=.9, maximum-scale=.9, user-scalable=no"/>
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-		<link rel="stylesheet" type="text/css" href="css/app.min.css">
-		<!-- <link rel="shortcut icon" href="images/favicon.ico"/> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=.9, maximum-scale=.9, user-scalable=no"/> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="public/css/app.min.css">
+		<!-- <link rel="shortcut icon" href="public/images/favicon.ico"/> -->
 	</head>
 
 	<body>
@@ -25,6 +25,7 @@
 					- test initial-scale=.9
 					- drag dupe bug
 					- fix modal landscape cut off bug
+					- use JPG images
 
 
 					To add a project:
@@ -34,7 +35,7 @@
 			     -->
 
 			    <section class="project" id="minimum">
-			        <img class="project__img" src="images/Minimum.png" alt="" />
+			        <img class="project__img" src="public/images/Minimum.png" alt="" />
 			        <div class="drawer">
 			        	<a href="#" class="drawer__link">001</a>
 			        	<div class="drawer__contents">
@@ -44,7 +45,7 @@
 			    </section>
 
 			    <section class="project" id="clippy">
-			        <img class="project__img" src="images/clippy.png" alt="" />
+			        <img class="project__img" src="public/images/clippy.png" alt="" />
 			        <div class="drawer">
 			        	<a href="#" class="drawer__link">002</a>
 			        	<div class="drawer__contents">
@@ -54,7 +55,7 @@
 			    </section>
 
 			    <section class="project" id="cover">
-			        <img class="project__img" src="images/500WCover.png" alt="" />
+			        <img class="project__img" src="public/images/500WCover.png" alt="" />
 			        <div class="drawer">
 			        	<a href="#" class="drawer__link">003</a>
 			        	<div class="drawer__contents">
@@ -64,7 +65,7 @@
 			    </section>
 
 			    <section class="project" id="interior">
-			        <img class="project__img" src="images/500WInterior.png" alt="" />
+			        <img class="project__img" src="public/images/500WInterior.png" alt="" />
 			        <div class="drawer">
 			        	<a href="#" class="drawer__link">004</a>
 			        	<div class="drawer__contents">
@@ -82,7 +83,7 @@
 			<div class="dialog__main">
 				<div class="dialog__header">
 					<a class="dialog__close" href="#">
-						<img src="images/plus-white.svg">
+						<img src="public/images/plus-white.svg">
 					</a>
 				</div>
 
@@ -132,7 +133,7 @@
 				<!-- /dialog__body -->
 
 				<footer class="dialog__footer">
-					<small>Site developed by Kinetic Manikin <br> Set in Portrait and Arial</small>
+					<small>Site developed by <a href="http://post-analog.com">Post-Analog</a> <br> Set in <a href="http://nabisco.com">Portrait</a> and Arial</small>
 				</footer>
 
 			</div>
@@ -143,6 +144,15 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
 		<script src="js/app.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+		  ga('create', 'UA-70756378-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 	</body>
 </html>
