@@ -1,0 +1,32 @@
+{
+  "name": "rfj-site",
+  "version": "1.0.0",
+  "description": "Regan Fred Johnson portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rblakejohnson/rfj-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rblakejohnson/rfj-site/issues"
+  },
+  "homepage": "https://github.com/rblakejohnson/rfj-site",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "csswring": "^4.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-copy": "0.0.2",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "run-sequence": "^1.1.5"
+  }
+}
