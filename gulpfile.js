@@ -5,7 +5,6 @@ var gulp = require('gulp'),
 	csswring = require('csswring'),
 	rename = require('gulp-rename'),
 	uglify = require('gulp-uglify'),
-	copy = require('gulp-copy'),
 	del = require('del'),
 	sequence = require('run-sequence'),
 	imagemin = require('gulp-imagemin');
@@ -16,7 +15,7 @@ gulp.task('default', function(cb) {
 });
 
 gulp.task('build', ['clean'], function(cb) {
-	sequence( ['styles', 'scripts', 'fonts'], cb );
+	sequence( ['styles', 'scripts', 'fonts', 'images'], cb );
 });
 
 gulp.task('clean', function () {
@@ -40,7 +39,7 @@ gulp.task('scripts', function() {
 		.pipe( browserSync.stream() );
 });
 
-gulp.task('images', function() {
+gulp.task('images:optimize', function() {
     return gulp.src('src/images/*')
         .pipe(imagemin({
             progressive: true,
@@ -50,9 +49,14 @@ gulp.task('images', function() {
         .pipe(gulp.dest('public/images'));
 });
 
+gulp.task('images', function() {
+    return gulp.src('src/images/*')
+        .pipe(gulp.dest('public/images'));
+});
+
 gulp.task('fonts', function() {
-    return gulp.src('src/fonts')
-    	.pipe( copy('public/fonts') );
+    return gulp.src('src/fonts/*')
+    	.pipe(gulp.dest('public/fonts'));
 
 });
 
@@ -67,6 +71,7 @@ gulp.task('browsersync', function() {
 gulp.task('watch', function() {
 	gulp.watch('src/css/app.css', ['styles']);
 	gulp.watch('src/js/app.js', ['scripts']);
+	gulp.watch('src/images/*', ['images']);
+	gulp.watch('src/fonts/*', ['fonts']);
 	gulp.watch('index.html').on('change', browserSync.reload);
 });
-

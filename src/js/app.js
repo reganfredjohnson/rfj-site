@@ -148,11 +148,10 @@ function ObjectMap(param) {
     });
 };
 
-var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|webOS)/);
-
 
 document.addEventListener('DOMContentLoaded', function() {
-	var objectMap = document.querySelector('#objectMap');
+	var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|webOS)/),
+		objectMap = document.querySelector('#objectMap');
 
 	if (!isMobile) {
 		var map = new ObjectMap({
@@ -176,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		setTimeout(function() {
 			$('html, body').animate({
-				scrollTop: '200px',
+				scrollTop: '0px',
 				scrollLeft: left
 			}, 0);
 		});
