@@ -2,10 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<title>Regan Fred Johnson</title>
-		<meta name="viewport" content="width=device-width, initial-scale=.9, maximum-scale=.9, user-scalable=no"/>
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1,1 maximum-scale=1, user-scalable=no"/> -->
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
 		<link rel="stylesheet" type="text/css" href="public/css/app.min.css">
 		<!-- <link rel="shortcut icon" href="public/images/favicon.ico"/> -->
@@ -17,24 +16,14 @@
 		    <a href="#" class="site-header__contact">?</a>
 		</header>
 
-	    <div class="content">
-		    <div id="objectMap">
-
-			    <!--
-			    	TODO:
-					- use JPG images
-					- in-stalk
-					- test initial-scale=.9
-			     -->
-
-
+	    <div class="projects--wrapper">
+		    <div class="projects">
 			    <!--
 					To add a project:
-					-duplicate <section>
-					-update id, image, number and text
+					-duplicate <section />
+					-update id, image src & alt, number and text
 					-then update the css
 			     -->
-
 			    <section class="project" id="minimum">
 			        <img class="project__img" src="public/images/Minimum.png" alt="" />
 			        <div class="drawer">
@@ -76,9 +65,9 @@
 			    </section>
 
 			</div>
-			<!-- /objectMap -->
+			<!-- /projects -->
 		</div>
-		<!-- /content -->
+		<!-- /projects wrapper -->
 
 		<section class="dialog">
 			<div class="dialog__main">
@@ -142,7 +131,6 @@
 		</section>
 		<!-- /dialog -->
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="public/js/app.min.js"></script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

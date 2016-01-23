@@ -6,19 +6,15 @@
 	box-sizing: border-box;
 }
 
-html,
-body {
-	height:100%;
-	overflow:hidden;
-	margin:0;
-	padding:0;
-}
-
 body {
     font: 100%/1.4 Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
     background: #fafafa;
     color: #231f20;
-	/*user-select: none;*/
+	user-select: none;
 }
 
 a {
@@ -119,7 +115,6 @@ img {
 
 .dialog {
 	position: fixed;
-	top: 0;
 	z-index: 100;
 	width: 100%;
 	height: 100%;
@@ -294,47 +289,72 @@ img {
 
 
 /*
-	Projects
+	Content
 */
 
-.projects--wrapper {
-	overflow:hidden;
-	width:100%;
-	height:100%;
-	cursor:move;
+.content {
+    /*width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: inherit;*/
     padding-top: 80px;
 }
 
-.projects {
-	width: 3000px;
-	height: 2000px;
+@media only screen and (min-width: 600px) {
+	.content {
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    margin-left: auto;
+	    margin-right: auto;
+	    overflow: inherit;
+	}
+
+	.projects {
+	    width: 4000px;
+	    height: 2000px;
+	    cursor: grab;
+	}
+
+	.grabbing {
+	    cursor: grabbing;
+	}
 }
+
+
+
+/*
+	Projects
+*/
 
 .project {
     text-align: center;
-    position: absolute;
+}
+
+@media only screen and (min-width: 600px) {
+	.project {
+		position: absolute;
+	}
 }
 
 .project__img {
     display: inline-block;
     margin-bottom: 1em;
-
-		/*width: auto;*/
-	    width: 75%;
-
-	    /* Disable dragging and selecting images */
-/*	    position: relative;
-	    z-index: -1;
-	    user-select: none;
-*/
 }
 
 @media only screen and (min-width: 600px) {
 	.project__img {
-		width: auto;
+		/*width: auto;*/
+	    width: 75%;
+
+	    /* Disable dragging and selecting images */
+	    position: relative;
+	    z-index: -1;
+	    user-select: none;
 	}
 }
-
 
 .drawer {
     max-width: 400px;
@@ -366,7 +386,9 @@ img {
 	opacity: 0;
 	transition: all .25s ease-out;
 	max-height: 0;
+	margin-top: 1.4em;
 	padding: 0.5em 1.2em;
+	background: #f4f4f4;
 	font-size: 0.9em;
 }
 
@@ -374,6 +396,13 @@ img {
 	visibility: visible;
 	opacity: 1;
 	max-height: 35em;
+}
+
+@media only screen and (min-width: 600px) {
+	.drawer__link--active + .drawer__contents {
+		background: none;
+		margin-top: 0;
+	}
 }
 
 
@@ -385,26 +414,28 @@ img {
 	-update the top, left and width values
 */
 
-#minimum {
-	top: 500px;
-	left: 800px;
-	width: 720px;
-}
+@media only screen and (min-width: 600px) {
+	#minimum {
+	    top: 500px;
+	    left: 800px;
+	    width: 720px;
+	}
 
-#clippy {
-	top: 460px;
-	left: 2200px;
-	width: 540px;
-}
+	#clippy {
+	    top: 460px;
+	    left: 2200px;
+	    width: 540px;
+	}
 
-#interior {
-	top: 1150px;
-	left: 1110px;
-	width: 1011px;
-}
+	#interior {
+	    top: 1150px;
+	    left: 1110px;
+	    width: 1011px;
+	}
 
-#cover {
-	top: 920px;
-	left: 280px;
-	width: 505px;
+	#cover {
+	    top: 920px;
+	    left: 280px;
+	    width: 505px;
+	}
 }

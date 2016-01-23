@@ -362,32 +362,3 @@
 	};
 
 }( this ));
-
-
-
-function qsa(selector, element) {
-	var element = element || document;
-	return [].slice.call( element.querySelectorAll( selector ) );
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-	Pan( document.querySelector('.projects') );
-
-	qsa('.drawer__link').forEach(function(link) {
-		link.addEventListener('click', function(e) {
-			e.preventDefault();
-			this.classList.toggle('drawer__link--active');
-		});
-	});
-
-	document.querySelector('.site-header__contact').addEventListener('click', function(e) {
-		e.preventDefault();
-		document.querySelector('.dialog').classList.add('dialog--active');
-	});
-
-	document.querySelector('.dialog__close').addEventListener('click', function(e) {
-		e.preventDefault();
-		document.querySelector('.dialog').classList.remove('dialog--active');
-	});
-
-});
