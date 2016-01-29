@@ -73,11 +73,10 @@ img {
 	justify-content: space-between;
 	position: fixed;
 	width: 100%;
-	top: 0;
+	top: 1em;
 	left: 0;
 	right: 0;
 	z-index: 10;
-	background: #fff;
 	text-align: center;
 }
 
@@ -90,7 +89,7 @@ img {
 .site-header__title {
 	margin: 0;
 	padding: 0.9em 4%;
-	font: 1.2em/1 'Portrait Web';
+	font: 1.4em/1 'Portrait Web';
 }
 
 @media only screen and (min-width: 600px) {
@@ -101,8 +100,8 @@ img {
 
 .site-header__contact {
 	padding: 0.9em 4%;
-	font: 1.2em/1 'Portrait Web';
-	color: #333;
+	font: 1.4em/1 'Portrait Web';
+	color: #222;
 }
 
 @media only screen and (min-width: 600px) {
@@ -195,6 +194,10 @@ img {
 	padding: 1em 7%;
 	font-size: 0.7em;
 	text-transform: uppercase;
+}
+
+.instagram-line {
+	position: relative;
 }
 
 @media only screen and (min-width: 600px) {
