@@ -200,6 +200,34 @@ img {
 	position: relative;
 }
 
+.instagram-line:before {
+	content: "";
+	background: url("../../public/images/instagram_line.svg");
+	background-repeat: no-repeat;
+	width: 225px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	bottom: -38px;
+}
+
+.pentagram-line {
+	position: relative;
+}
+
+.pentagram-line:before {
+	content: "";
+	background: url("../../public/images/pentagram_line.svg");
+	background-repeat: no-repeat;
+	width: 225px;
+	height: 76px;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	bottom: -38px;
+}
+
 @media only screen and (min-width: 600px) {
 	.dialog__links a {
 		flex: 0 0 33.33%;
