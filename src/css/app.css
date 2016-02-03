@@ -16,8 +16,8 @@ body {
 
 body {
     font: 100%/1.4 Arial, sans-serif;
-    background: #fafafa;
-    color: #231f20;
+    background: #222;
+    color: #fff;
 	/*user-select: none;*/
 }
 
@@ -101,7 +101,7 @@ img {
 .site-header__contact {
 	padding: 0.9em 4%;
 	font: 1.4em/1 'Portrait Web';
-	color: #222;
+	color: #FFF;
 }
 
 @media only screen and (min-width: 600px) {
@@ -175,63 +175,6 @@ img {
 }
 .dialog__close {
 	padding: 1em 4%;
-}
-
-.dialog__links {
-	margin-bottom: 3em;
-}
-
-@media only screen and (min-width: 600px) {
-	.dialog__links {
-		display: flex;
-		justify-content: center;
-	}
-}
-
-.dialog__links a {
-	display: block;
-	flex: 0 0 33.33%;
-	padding: 1em 7%;
-	font-size: 0.8em;
-	text-transform: uppercase;
-}
-
-.instagram-line {
-	position: relative;
-}
-
-.instagram-line:before {
-	content: "";
-	background: url("../../public/images/instagram_line.gif");
-	background-repeat: no-repeat;
-	width: 225px;
-	height: 50px;
-	position: absolute;
-	left: 50%;
-	margin-left: -75px;
-	bottom: -38px;
-}
-
-.pentagram-line {
-	position: relative;
-}
-
-.pentagram-line:before {
-	content: "";
-	background: url("../../public/images/pentagram_line2.gif");
-	background-repeat: no-repeat;
-	width: 225px;
-	height: 76px;
-	position: absolute;
-	left: 50%;
-	margin-left: -75px;
-	bottom: -38px;
-}
-
-@media only screen and (min-width: 600px) {
-	.dialog__links a {
-		flex: 0 0 33.33%;
-	}
 }
 
 .dialog__body {
@@ -323,6 +266,63 @@ img {
 	}
 }
 
+.dialog__links {
+	margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 600px) {
+	.dialog__links {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.dialog__links a {
+	display: block;
+	flex: 0 0 33.33%;
+	padding: 1em 7%;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+.instagram-line {
+	position: relative;
+}
+
+.instagram-line:before {
+	content: "";
+	background: url("../../public/images/instagram_line.svg");
+	background-repeat: no-repeat;
+	width: 225px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	bottom: -38px;
+}
+
+.pentagram-line {
+	position: relative;
+}
+
+.pentagram-line:before {
+	content: "";
+	background: url("../../public/images/pentagram_line.svg");
+	background-repeat: no-repeat;
+	width: 225px;
+	height: 76px;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	bottom: -38px;
+}
+
+@media only screen and (min-width: 600px) {
+	.dialog__links a {
+		flex: 0 0 33.33%;
+	}
+}
+
 
 /*
 	Projects
@@ -377,7 +377,7 @@ img {
     width: 56px;
     height: 44px;
     display: block;
-    color: #231f20;
+    color: #FFF;
     border: 1px solid;
     text-align: center;
     position: relative;
@@ -393,7 +393,7 @@ img {
     width: 56px;
     height: 44px;
     display: block;
-    color: #231f20;
+    color: #FFF;
     border: 1px solid;
     text-align: center;
     position: relative;
@@ -406,8 +406,8 @@ img {
 }
 
 .drawer__link--active {
-    color: #fff;
-	background: #222;
+    color: #222;
+	background: #FFF;
 }
 
 .drawer__contents {
@@ -420,7 +420,7 @@ img {
 }
 
 .drawer__contents a{
-	color:#222;
+	color:#FFF;
 	text-decoration: underline;
 }
 
@@ -480,6 +480,27 @@ img {
 	left: 250px;
 }
 
+#almost {
+	top: 2200px;
+	left: 1500px;
+}
+
+#yuta1 {
+	top: 600px;
+	left: 3200px;
+}
+
+#yuta2 {
+	top: 1200px;
+	left: 2800px;
+}
+
+#eee {
+	top: 0px;
+	left: 3600px;
+	width: 480px;
+}
+
 #z {
 	top:1600px;
 	left:80px;
@@ -498,4 +519,9 @@ img {
 #line2 {
 	top:2500px;
 	left:1100px
+}
+
+#line3 {
+	top:1500px;
+	left:1500px
 }
