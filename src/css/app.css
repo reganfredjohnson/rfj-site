@@ -211,27 +211,54 @@ img {
 }
 
 .bio {
-	font: 8.5vw/1.2 'Portrait Web';
+	font-size: .9em;
+	padding: 0 4em;
+	margin-bottom: 7em;
+	margin-top: 3em;
+}
+
+.bio-line {
+	position: relative;
+}
+
+.bio-line:after {
+	content: "";
+	background: url("../images/dialog_line_left.svg");
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	margin-left: -215px;
+	bottom: -100px;
+}
+
+.contact {
+	font: 11vw/1.2 'Portrait Web';
 	margin: 0;
 	padding: 0 0.8em;
 }
 
+.contact a {
+	display: block;
+}
+
 @media only screen and (min-width: 600px) {
-	.bio {
-		font-size: 6.3vmax;
+	.contact {
+		font-size: 11vmax;
 		padding: 0;
 	}
 }
 
 @media only screen and (min-width: 1010px) {
-	.bio {
-		font-size: 3.9em;
+	.contact {
+		font-size: 7em;
 	}
 }
 
 .experience {
 	list-style: none;
-	margin: 0.4em 0;
+	margin: 2.7em 0;
 	padding: 0;
 	text-align: center;
 }
@@ -246,52 +273,36 @@ img {
 	margin-bottom: 0.2em;
 }
 
-.dialog__footer {
-	display: flex;
-	justify-content: center;
-	padding: 0 7%;
-}
-
-.dialog__footer small {
+.info {
+	margin-top: 7.2em;
 	font-size: 0.9em;
-}
-
-@media only screen and (min-width: 600px) {
-	.dialog__footer {
-		justify-content: flex-start;
-	}
-
-	.dialog__footer small {
-		flex: 0 0 66.66%;
-	}
-}
-
-.dialog__links {
-	margin-bottom: 3em;
-}
-
-@media only screen and (min-width: 600px) {
-	.dialog__links {
-		display: flex;
-		justify-content: center;
-	}
-}
-
-.dialog__links a {
 	display: block;
-	flex: 0 0 33.33%;
-	padding: 1em 7%;
-	font-size: 0.8em;
-	text-transform: uppercase;
 }
 
+.info-line {
+	position: relative;
+}
+
+.info-line:before {
+	content: "";
+	background: url("../images/dialog_line_right.svg");
+	background-repeat: no-repeat;
+	width: 225px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	margin-left: -120px;
+	bottom: 60px;
+}
+
+/*
 .instagram-line {
 	position: relative;
 }
 
 .instagram-line:before {
 	content: "";
-	background: url("../../public/images/instagram_line.svg");
+	background: url("../images/instagram_line.svg");
 	background-repeat: no-repeat;
 	width: 225px;
 	height: 50px;
@@ -299,15 +310,15 @@ img {
 	left: 50%;
 	margin-left: -75px;
 	bottom: -38px;
-}
+}*/
 
-.pentagram-line {
+/*.pentagram-line {
 	position: relative;
 }
 
 .pentagram-line:before {
 	content: "";
-	background: url("../../public/images/pentagram_line.svg");
+	background: url("../images/pentagram_line.svg");
 	background-repeat: no-repeat;
 	width: 225px;
 	height: 76px;
@@ -315,13 +326,7 @@ img {
 	left: 50%;
 	margin-left: -75px;
 	bottom: -38px;
-}
-
-@media only screen and (min-width: 600px) {
-	.dialog__links a {
-		flex: 0 0 33.33%;
-	}
-}
+}*/
 
 
 /*
