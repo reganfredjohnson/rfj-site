@@ -89,7 +89,7 @@ img {
 .site-header__title {
 	margin: 0;
 	padding: 0.9em 4%;
-	font: 1.4em/1 'Portrait Web';
+	font: 1.6em/1 'Portrait Web';
 }
 
 @media only screen and (min-width: 600px) {
@@ -100,7 +100,7 @@ img {
 
 .site-header__contact {
 	padding: 0.9em 4%;
-	font: 1.4em/1 'Portrait Web';
+	font: 1.6em/1 'Portrait Web';
 	color: #FFF;
 }
 
@@ -295,38 +295,38 @@ img {
 	bottom: 60px;
 }
 
-/*
-.instagram-line {
+
+.linegif1 {
 	position: relative;
 }
 
-.instagram-line:before {
+.linegif1:before {
 	content: "";
-	background: url("../images/instagram_line.svg");
+	background: url("../images/linegif1.gif");
 	background-repeat: no-repeat;
 	width: 225px;
-	height: 50px;
+	height: 70px;
 	position: absolute;
 	left: 50%;
-	margin-left: -75px;
+	margin-left: -60px;
 	bottom: -38px;
-}*/
+}
 
-/*.pentagram-line {
+.linegif2 {
 	position: relative;
 }
 
-.pentagram-line:before {
+.linegif2:before {
 	content: "";
-	background: url("../images/pentagram_line.svg");
+	background: url("../images/linegif2.gif");
 	background-repeat: no-repeat;
 	width: 225px;
 	height: 76px;
 	position: absolute;
 	left: 50%;
 	margin-left: -75px;
-	bottom: -38px;
-}*/
+	bottom: -75px;
+}
 
 
 /*
@@ -342,8 +342,8 @@ img {
 }
 
 .projects {
-	width: 4000px;
-	height: 3500px;
+	width: 3800px;
+	height: 3800px;
 }
 
 .project {
@@ -379,8 +379,8 @@ img {
 
 .drawer__link {
     border-radius: 50%;
-    width: 56px;
-    height: 44px;
+    width: 64px;
+    height: 50px;
     display: block;
     color: #FFF;
     border: 1px solid;
@@ -388,25 +388,8 @@ img {
     position: relative;
     transform: translateX(-50%);
     left: 50%;
-    padding: 5px;
-    font: 1.5em/1.3 'Portrait Web';
-
-}
-
-.drawer__hhmi {
-    border-radius: 50%;
-    width: 56px;
-    height: 44px;
-    display: block;
-    color: #FFF;
-    border: 1px solid;
-    text-align: center;
-    position: relative;
-    transform: translateX(-50%);
-    left: 80%;
-    top: -220px;
-    padding: 5px;
-    font: 1.5em/1.3 'Portrait Web';
+    padding: 10px;
+    font: 1.6em/1 'Portrait Web';
 
 }
 
@@ -445,15 +428,14 @@ img {
 */
 
 #minimum {
-	top: 200px;
-	left: 650px;
+	top: 160px;
+	left: 740px;
 	width: 720px;
 }
 
 #clippy {
-	top: 375px;
-	left: 100px;
-	width: 540px;
+	top: 400px;
+	left: 140px;
 }
 
 #interior {
@@ -463,52 +445,51 @@ img {
 }
 
 #cover {
-	top: 900px;
-	left: 900px;
+	top: 1600px;
+	left: 1850px;
 	width: 505px;
 }
 
 #hhmi {
-	top: 1400px;
-	left: 2000px;
+	top: 2550px;
+	left: 400px;
 	width: 1250px;
 }
 
 #definemag {
-	top: 2300px;
-	left: 2650px;
+	top: 60px;
+	left: 2350px;
 	width: 1250px;
 }
 
 #dg1 {
-	top: 2700px;
-	left: 250px;
+	top: 680px;
+	left: 1200px;
 }
 
 #almost {
-	top: 2200px;
-	left: 1500px;
+	top: 1020px;
+	left: 570px;
 }
 
 #yuta1 {
-	top: 600px;
-	left: 3200px;
+	top: 2100px;
+	left: 40px;
 }
 
 #yuta2 {
 	top: 1200px;
-	left: 2800px;
+	left: 2750px;
 }
 
-#eee {
-	top: 0px;
-	left: 3600px;
-	width: 480px;
+#interrobang {
+	top: 2750px;
+	left: 1950px;
 }
 
 #z {
-	top:1600px;
-	left:80px;
+	top:2400px;
+	left:2680px;
 }
 
 #canaryicons {
@@ -517,16 +498,12 @@ img {
 }
 
 #line1 {
-	top:675px;
-	left:1325px
+	top:1500px;
+	left:600px
 }
 
 #line2 {
-	top:2500px;
-	left:1100px
+	top:850px;
+	left:2840px
 }
 
-#line3 {
-	top:1500px;
-	left:1500px
-}
