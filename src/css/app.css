@@ -342,8 +342,8 @@ img {
 }
 
 .projects {
-	width: 3800px;
-	height: 3800px;
+	width: 3400px;
+	height: 3400px;
 }
 
 .project {
@@ -428,14 +428,14 @@ img {
 */
 
 #minimum {
-	top: 160px;
+	top: 140px;
 	left: 740px;
 	width: 720px;
 }
 
 #clippy {
-	top: 400px;
-	left: 140px;
+	top: 1400px;
+	left: 500px;
 }
 
 #interior {
@@ -445,41 +445,41 @@ img {
 }
 
 #cover {
-	top: 1600px;
+	top: 950px;
 	left: 1850px;
 	width: 505px;
 }
 
 #hhmi {
 	top: 2550px;
-	left: 400px;
+	left: 200px;
 	width: 1250px;
 }
 
 #definemag {
-	top: 60px;
-	left: 2350px;
+	top: 10px;
+	left: 2100px;
 	width: 1250px;
 }
 
 #dg1 {
-	top: 680px;
-	left: 1200px;
-}
-
-#almost {
-	top: 1020px;
-	left: 570px;
-}
-
-#yuta1 {
-	top: 2100px;
+	top: 480px;
 	left: 40px;
 }
 
+#almost {
+	top: 1350px;
+	left: 1150px;
+}
+
+#yuta1 {
+	top: 2000px;
+	left: 20px;
+}
+
 #yuta2 {
-	top: 1200px;
-	left: 2750px;
+	top: 1400px;
+	left: 2600px;
 }
 
 #interrobang {
@@ -488,18 +488,18 @@ img {
 }
 
 #canary_uses {
-	top: 1020px;
-	left: 570px;
+	top: 400px;
+	left: 1300px;
 }
 
 #dirtworks_comp {
-	top: 1020px;
-	left: 20px;
+	top: 2700px;
+	left: 1700px;
 }
 
 #z {
-	top:2400px;
-	left:2680px;
+	top:2100px;
+	left:2200px;
 }
 
 #canaryicons {
@@ -509,11 +509,11 @@ img {
 
 #line1 {
 	top:1500px;
-	left:600px
+	left:500px
 }
 
 #line2 {
 	top:850px;
-	left:2840px
+	left:2600px
 }
 
