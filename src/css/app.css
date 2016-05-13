@@ -16,8 +16,8 @@ body {
 
 body {
     font: 100%/1.4 Arial, sans-serif;
-    background: #222;
-    color: #fff;
+    background: #fff;
+    color: #222;
 	/*user-select: none;*/
 }
 
@@ -101,7 +101,6 @@ img {
 .site-header__contact {
 	padding: 0.9em 4%;
 	font: 1.6em/1 'Portrait Web';
-	color: #FFF;
 }
 
 @media only screen and (min-width: 600px) {
@@ -128,7 +127,7 @@ img {
 	visibility: hidden;
     opacity: 0;
 	text-align: center;
-    transition: all .2s ease-out;
+    transition: all .7s ease-out;
     padding: 3.2em 0 1em;
 }
 
@@ -378,24 +377,23 @@ img {
 }
 
 .drawer__link {
-    border-radius: 50%;
     width: 58px;
-    height: 58px;
+    height: 34px;
     display: block;
-    color: #FFF;
+    color: #222;
     border: 1px solid;
     text-align: center;
     position: relative;
     transform: translateX(-50%);
     left: 50%;
-    padding-top: 14px;
+    padding-top: 4px;
     font: 1.6em/1 'Portrait Web';
 
 }
 
 .drawer__link--active {
-    color: #222;
-	background: #FFF;
+    color: #FFF;
+	background: #222;
 }
 
 .drawer__contents {
@@ -408,7 +406,7 @@ img {
 }
 
 .drawer__contents a{
-	color:#FFF;
+	color:#222;
 	text-decoration: underline;
 }
 
