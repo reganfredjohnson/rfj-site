@@ -88,7 +88,7 @@ img {
 
 .site-header__title {
 	margin: 0;
-	padding: 0.9em 4%;
+	padding: .09em 4%;
 	font: 1.6em/1 'Portrait Web';
 }
 
@@ -101,6 +101,7 @@ img {
 .site-header__contact {
 	padding: 0.9em 4%;
 	font: 1.6em/1 'Portrait Web';
+	color: #222;
 }
 
 @media only screen and (min-width: 600px) {
@@ -173,7 +174,7 @@ img {
 
 }
 .dialog__close {
-	padding: 1em 4%;
+	padding: 1.2em 4%;
 }
 
 .dialog__body {
@@ -263,17 +264,15 @@ img {
 }
 
 .experience__item {
-	margin-bottom: 1.4em;
+	margin-bottom: 1.5em;
 	font-size: 0.9em;
 }
 
 .experience__place {
-	text-transform: uppercase;
-	margin-bottom: 0.2em;
 }
 
 .info {
-	margin-top: 8.5em;
+	margin-top: 6.7em;
 	font-size: 0.9em;
 	display: block;
 }
@@ -287,45 +286,14 @@ img {
 	background: url("../images/dialog_line_right.svg");
 	background-repeat: no-repeat;
 	width: 225px;
-	height: 50px;
+	height: 55px;
 	position: absolute;
 	left: 50%;
 	margin-left: -120px;
-	bottom: 58px;
+	bottom: 62px;
 }
 
 
-.linegif1 {
-	position: relative;
-}
-
-.linegif1:before {
-	content: "";
-	background: url("../images/linegif1.gif");
-	background-repeat: no-repeat;
-	width: 225px;
-	height: 70px;
-	position: absolute;
-	left: 50%;
-	margin-left: -60px;
-	bottom: -38px;
-}
-
-.linegif2 {
-	position: relative;
-}
-
-.linegif2:before {
-	content: "";
-	background: url("../images/linegif2.gif");
-	background-repeat: no-repeat;
-	width: 225px;
-	height: 76px;
-	position: absolute;
-	left: 50%;
-	margin-left: -75px;
-	bottom: -75px;
-}
 
 
 /*
@@ -341,8 +309,8 @@ img {
 }
 
 .projects {
-	width: 3400px;
-	height: 3400px;
+	width: 4250px;
+	height: 3950px;
 }
 
 .project {
@@ -372,49 +340,29 @@ img {
 
 
 .drawer {
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
 }
 
-.drawer__link {
-    width: 58px;
-    height: 34px;
+.drawer__text {
+ 	width: 600px;
     display: block;
     color: #222;
-    border: 1px solid;
     text-align: center;
     position: relative;
     transform: translateX(-50%);
     left: 50%;
     padding-top: 4px;
-    font: 1.6em/1 'Portrait Web';
+	font: .9em/1.5 Arial, sans-serif;
 
 }
 
-.drawer__link--active {
-    color: #FFF;
-	background: #222;
-}
-
-.drawer__contents {
-	visibility: hidden;
-	opacity: 0;
-	transition: all .25s ease-out;
-	max-height: 0;
-	padding: 0.5em 1.2em;
-	font: 1em/1.5 Arial, sans-serif;
-}
-
-.drawer__contents a{
-	color:#222;
+.drawer__text a {
 	text-decoration: underline;
+	color: #222;
 }
 
-.drawer__link--active + .drawer__contents {
-	visibility: visible;
-	opacity: 1;
-	max-height: 35em;
-}
+
 
 
 
@@ -425,93 +373,93 @@ img {
 	-update the top, left and width values
 */
 
-#minimum {
-	top: 140px;
-	left: 740px;
-	width: 720px;
+
+
+
+
+#lettersmall1 {
+	top:100px;
+	left:100px;
 }
 
-#clippy {
-	top: 1400px;
-	left: 500px;
+#lettersmall2 {
+	top:1400px;
+	left:1500px;
 }
 
-#interior {
-	top: 300px;
-	left: 2350px;
-	width: 1011px;
+#lettersmall3 {
+	top:1700px;
+	left:250px;
 }
 
-#cover {
-	top: 950px;
-	left: 1850px;
-	width: 505px;
+#lettersmall4 {
+	top:1180px;
+	left:2450px;
 }
 
-#hhmi {
-	top: 2550px;
-	left: 200px;
-	width: 1250px;
+#lettersmall5 {
+	top:2200px;
+	left:1050px;
 }
 
-#definemag {
-	top: 10px;
-	left: 2100px;
-	width: 1250px;
+#lettersmall6 {
+	top:3400px;
+	left:1800px;
 }
 
-#dg1 {
-	top: 480px;
-	left: 40px;
+#lettersmall7 {
+	top:2800px;
+	left:1900px;
 }
 
-#almost {
-	top: 1250px;
-	left: 1150px;
+#lettersmall8 {
+	top:3340px;
+	left:3350px;
 }
 
-#yuta1 {
-	top: 2000px;
-	left: 20px;
+
+
+
+#letter1 {
+	top:610px;
+	left:100px;
 }
 
-#yuta2 {
-	top: 1400px;
-	left: 2600px;
+#letter2 {
+	top:80px;
+	left:2640px;
 }
 
-#interrobang {
-	top: 2750px;
-	left: 1950px;
+#letter3 {
+	top:750px;
+	left:3420px;
 }
 
-#canary_uses {
-	top: 400px;
-	left: 1300px;
+#letter4 {
+	top:2500px;
+	left:150px;
 }
 
-#dirtworks_comp {
-	top: 2700px;
-	left: 1700px;
+#letter5 {
+	top:300px;
+	left:1200px;
 }
 
-#z {
-	top:2100px;
-	left:2200px;
+#letter6 {
+	top:2750px;
+	left:950px;
 }
 
-#canaryicons {
-	top:1800px;
-	left:1000px;
+
+
+#letterdoublewide1 {
+	top:2150px;
+	left:2700px;
 }
 
-#line1 {
-	top:1500px;
-	left:500px
-}
 
-#line2 {
-	top:850px;
-	left:2600px
-}
+
+
+
+
 
