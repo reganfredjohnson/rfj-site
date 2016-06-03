@@ -74,7 +74,6 @@ img {
 	position: fixed;
 	width: 100%;
 	top: 1em;
-	left: 0;
 	right: 0;
 	z-index: 10;
 	text-align: center;
@@ -90,6 +89,7 @@ img {
 	margin: 0;
 	padding: .09em 4%;
 	font: 1.6em/1 'Portrait Web';
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -442,7 +442,7 @@ img {
 
 #letter5 {
 	top:300px;
-	left:1200px;
+	left:1100px;
 }
 
 #letter6 {
