@@ -23,7 +23,7 @@ body {
 
 a {
     color: #000;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 img {
@@ -56,6 +56,18 @@ img {
      url('../fonts/ArtCompany-Mono.woff') format('woff'),
      url('../fonts/ArtCompany-Mono.ttf') format('truetype'),
      url('../fonts/ArtCompany-Mono.svg#PArtCompany-Mono') format('svg');
+  font-weight:  0;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'ArtCompany-MonoItalic';
+  src: url('../fonts/ArtCompany-MonoItalic.eot');
+  src: url('../fonts/ArtCompany-MonoItalic.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/ArtCompany-MonoItalic.woff') format('woff'),
+     url('../fonts/ArtCompany-MonoItalic.ttf') format('truetype'),
+     url('../fonts/ArtCompany-MonoItalic.svg#PArtCompany-MonoItalic') format('svg');
   font-weight:  0;
   font-style:   normal;
   font-stretch: normal;
@@ -175,9 +187,8 @@ img {
     opacity: .8;
 }
 
-.drawer__text a {
-	text-decoration: underline;
-	color: #000;
+.biotext a {
+    font-family: 'ArtCompany-MonoItalic';
 }
 
 
